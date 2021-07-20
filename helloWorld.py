@@ -1,4 +1,5 @@
 print("Hello World!!")
 
-joeysABitch = True
-print(joeysABitch)
+testInput = input("Is the sky blue?")
+
+print("You answered: " + testInput)
