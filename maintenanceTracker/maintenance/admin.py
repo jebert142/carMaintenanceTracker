@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Vehicle, Log
 
-# Register your models here.
+# Registers models with Django
+admin.site.register(Vehicle)
+admin.site.register(Log)

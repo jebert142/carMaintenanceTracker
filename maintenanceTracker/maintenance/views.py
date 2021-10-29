@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+def home(request):
+    return render(request, 'maintenance/home.html')
+
+
+def logs(request):
+    return render(request, 'maintenance/logs.html')
