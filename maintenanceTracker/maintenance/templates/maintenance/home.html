@@ -1,3 +1,26 @@
-<h1>This is the home page!</h1>
+{% load static %}
+<head>
+        <script src="{% static 'maintenance/vue.js' %}"></script>
+    <title>Car Maintenance Tracker</title>
+</head>
 
-<a href="{% url 'logs' %}">View Logs</a>
+<body>
+    <h1>This is the home page!</h1>
+
+    <a href="{% url 'logs' %}">View Logs</a>
+
+    <div id='app'>
+        <p>The message is: <span v-html="message"></span></p>
+    </div>
+
+
+
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!'
+            }
+        });
+    </script>
+</body>
